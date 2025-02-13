@@ -17,7 +17,7 @@ class MinPIMD : public Min {
   void force_compute();
 
  private:
-  class FixPIMD *fix_pimd;
+  class FixPIMDLangevin *fix_pimd;
 };
 
 }    // namespace LAMMPS_NS

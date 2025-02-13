@@ -12,8 +12,8 @@ MinPIMD::MinPIMD(LAMMPS *lmp) : Min(lmp) {}
 void MinPIMD::init()
 {
   Min::init();
-  fix_pimd = static_cast<FixPIMD *>(modify->find_fix_by_style("pimd"));
-  if (!fix_pimd) error->all(FLERR, "PIMD fix not found");
+  fix_pimd = static_cast<FixPIMDLangevin *>(modify->find_fix_by_style("pimd/langevin"));
+  if (!fix_pimd) error->all(FLERR, "pimd/langevin fix not found");
 }
 
 void MinPIMD::force_clear()
