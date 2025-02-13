@@ -1,5 +1,5 @@
 #ifdef MinClass
-MinStyle(pimd,MinPIMD)
+MinimizeStyle(pimd,MinPIMD)
 #else
 #ifndef LMP_STYLE_MIN_H
 #define LMP_STYLE_MIN_H
