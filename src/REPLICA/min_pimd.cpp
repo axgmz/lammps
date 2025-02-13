@@ -1,5 +1,6 @@
 #include "min_pimd.h"
 #include "fix_pimd_langevin.h"
+#include "modify.h"
 #include "atom.h"
 #include "update.h"
 #include "error.h"
